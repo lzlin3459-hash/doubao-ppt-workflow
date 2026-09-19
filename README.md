@@ -66,5 +66,12 @@
 
 ```
 doubao-ppt-workflow/
-└── SKILL.md   # 技能本体：五步 SOP、决策树、硬性规则
+├── SKILL.md   # 技能本体：五步 SOP、决策树、硬性规则
+└── LICENSE    # MIT License
 ```
+
+---
+
+## License
+
+本项目基于 [MIT License](LICENSE) 开源，可自由使用、修改与分发。
