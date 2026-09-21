@@ -16,6 +16,27 @@
 
 ---
 
+## 安装（给使用者的步骤）
+
+1. **获取代码**：点击仓库右上角 `Code` → `Download ZIP`，或终端执行：
+
+   ```bash
+   git clone https://github.com/lzlin3459-hash/doubao-ppt-workflow.git
+   ```
+
+2. **放入技能目录**：将解压后的 `doubao-ppt-workflow` 文件夹**整体**复制到豆包 Agent 环境的用户技能目录：
+
+   - Windows 默认位置：`workspace/.user_skills/`
+   - 必须保持目录结构不变：`doubao-ppt-workflow/SKILL.md`
+
+3. **新开会话**：重启/新开一个豆包会话后，向 AI 提供数据表并说明汇报场景（例如「把这份电商复盘数据做成周会 PPT」），技能自动生效。
+
+4. **试用样例**：可用 `examples/sample_ecommerce_review.csv` 快速跑通全流程。
+
+> 说明：本 Skill 依赖豆包 Agent 环境的 PPT 生成与图表能力；纯对话场景下无法生效。
+
+---
+
 ## 方法论：五步 SOP
 
 | 步骤 | 动作 | 关键约束 |
@@ -42,15 +63,6 @@
 
 ---
 
-## 快速开始
-
-1. 将本 Skill 目录放入 Agent 环境的 `workspace/.user_skills/`。
-2. 向 AI 提供数据表/文档并说明汇报场景（例如「把这份电商复盘数据做成周会 PPT」）。
-3. AI 先输出洞察清单，等待你选定重点后生成初稿。
-4. 审核微调后交付。
-
----
-
 ## 适用场景
 
 | 场景 | 输入 | 产出 |
@@ -66,8 +78,10 @@
 
 ```
 doubao-ppt-workflow/
-├── SKILL.md   # 技能本体：五步 SOP、决策树、硬性规则
-└── LICENSE    # MIT License
+├── SKILL.md                        # 技能本体：五步 SOP、决策树、硬性规则
+├── examples/
+│   └── sample_ecommerce_review.csv # 电商复盘示例数据（可直接试用）
+└── LICENSE                         # MIT License
 ```
 
 ---
